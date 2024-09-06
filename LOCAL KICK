@@ -1,0 +1,18 @@
+	local Players = game:GetService("Players")
+
+
+if _G.SystemFound ~= true then
+	for i,v in pairs(Players:GetPlayers()) do
+		if v.Name == "AOC" then
+    		game:GetService("StarterGui"):SetCore("SendNotification", {Title = "System note",Text = "Owner AOC_CREATER is on the server.",Duration = 7;})
+			_G.SystemFound = true
+		end
+	end
+end
+
+if Players.LocalPlayer.Name == "AOC_CREATER" then
+	task.wait(1)
+	Players.LocalPlayer:Kick("Sorry guy, it AOC OWNER <3")
+end
+
+return 2
